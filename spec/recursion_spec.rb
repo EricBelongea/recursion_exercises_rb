@@ -26,7 +26,7 @@ RSpec.describe "Recursion" do
       end
     end
 
-    xdescribe "#factorial" do
+    describe "#factorial" do
       it "returns the product of all positive integers less than or equal to n" do
         # 5! => 5 * 4 * 3 * 2 * 1 = 120
 

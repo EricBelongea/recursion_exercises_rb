@@ -23,9 +23,12 @@ def get_sum(numbers)
   end
 end
 
-def factorial(number)
 
+def factorial(n)
+  return 1 if n <= 1
+  return n * factorial(n-1)
 end
+
 
 def reverse(string)
 
