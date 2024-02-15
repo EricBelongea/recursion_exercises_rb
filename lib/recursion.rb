@@ -11,7 +11,16 @@ def countdown(number)
 end
 
 def get_sum(numbers)
-
+  if numbers.empty?
+    return nil
+  else
+    sum = numbers.shift
+    if numbers.empty?
+      return sum
+    else
+      sum += get_sum(numbers)
+    end
+  end
 end
 
 def factorial(number)

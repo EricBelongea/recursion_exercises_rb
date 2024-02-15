@@ -15,7 +15,7 @@ RSpec.describe "Recursion" do
       end
     end
 
-    xdescribe "#get_sum" do
+    describe "#get_sum" do
       it "returns the sum of all the numbers in the array" do
         expect(get_sum([])).to be nil
         expect(get_sum([0])).to be 0
