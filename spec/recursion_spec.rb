@@ -39,7 +39,7 @@ RSpec.describe "Recursion" do
       end
     end
 
-    xdescribe "#reverse" do
+    describe "#reverse" do
       it "returns the string in reversed order" do
         expect(reverse("")).to eq("")
         expect(reverse(" ")).to eq(" ")
@@ -49,6 +49,7 @@ RSpec.describe "Recursion" do
         expect(reverse("ab")).to eq("ba")
         expect(reverse("abc")).to eq("cba")
         expect(reverse("ABC")).to eq("CBA")
+        expect(reverse(['a', 'b', 'c'])).to eq(['c','b','a'])
       end
     end
 

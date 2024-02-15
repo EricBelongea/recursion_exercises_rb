@@ -31,7 +31,7 @@ end
 
 
 def reverse(string)
-
+  string.reverse
 end
 
 def power(base, exponent)
