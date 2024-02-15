@@ -1,5 +1,13 @@
 def countdown(number)
-
+  array = []
+  if number <= 0
+    array << 0
+    return array
+  else
+    array << number
+    array += countdown(number - 1)
+  end
+  return array
 end
 
 def get_sum(numbers)

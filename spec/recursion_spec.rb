@@ -6,7 +6,7 @@ end
 
 RSpec.describe "Recursion" do
   context "Lesson Exercises" do
-    xdescribe "#countdown" do
+    describe "#countdown" do
       it "counts down to zero from the inputted number" do
         expect(countdown(0)).to eq([0])
         expect(countdown(1)).to eq([1, 0])
